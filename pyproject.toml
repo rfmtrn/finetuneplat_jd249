@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfmtrn-finetuneplat_jd249"
+version = "0.1.0"
+description = "把候选项映射到类别上，算出模型微调平台工程师·混合检索的权重调节的覆盖率并列出未覆盖的类别"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "rfmtrn" }]
+keywords = ["llm", "cli", "analysis", "observability"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://rfmtrn.github.io"
+Repository = "https://github.com/rfmtrn/finetuneplat_jd249"
+Issues = "https://github.com/rfmtrn/finetuneplat_jd249/issues"
+
+[project.scripts]
+finetuneplat_jd249 = "finetuneplat_jd249:main"
+
+[tool.setuptools]
+py-modules = ["finetuneplat_jd249"]
